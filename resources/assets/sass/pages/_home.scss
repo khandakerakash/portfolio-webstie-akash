@@ -1,0 +1,34 @@
+.home {
+  height: 100vh;
+
+  &-content {
+    @include vh-center;
+
+    .author-profile-photo {
+      margin-bottom: -1.5rem!important;
+    }
+
+    .author-profile-photo img {
+      @include pp-style;
+      position: relative;
+      height: auto;
+      margin: 25px auto;
+      z-index: 2;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -o-transition: all .3s;
+      -ms-transition: all .3s;
+      transition: all .3s;
+
+      &:hover {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+//FOR HIDING FOOTER FROM THE HOMEPAGE
+.home ~ .footer {
+  display: none !important;
+  opacity: 0 !important;
+}

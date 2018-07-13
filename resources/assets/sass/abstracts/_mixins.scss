@@ -1,0 +1,21 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin vh-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin pp-style {
+  max-width: 14rem;
+  border: 5px solid $pp-border-color;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+}

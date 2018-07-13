@@ -1,0 +1,61 @@
+body {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray-dark;
+}
+
+.heading-primary {
+  color: $heading-primary-color;
+  text-transform: uppercase;
+  text-align: center !important;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    border-bottom: .4px solid $color-gray-dark-dip;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @media (min-width: 320px) and (max-width: 420px) {
+      font-size: 3rem;
+      letter-spacing: 0.5rem;
+      color: #3D555F !important;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    animation: moveInRight 1s ease-out;
+
+    @media (min-width: 742px) and (max-width: 981px) {
+      letter-spacing: 0.5rem;
+    }
+
+    @media (min-width: 694px) and (max-width: 741px) {
+      letter-spacing: 0.4rem;
+    }
+
+    @media (min-width: 646px) and (max-width: 740px) {
+      letter-spacing: 0.3rem;
+    }
+
+    @media (min-width: 421px) and (max-width: 646px) {
+      letter-spacing: 0.2rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 420px) {
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+      color: #000 !important;
+    }
+  }
+}

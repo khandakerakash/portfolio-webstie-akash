@@ -1,0 +1,256 @@
+.portfolio {
+  margin: 5rem 0!important;
+
+  &-headings {
+
+    h2 {
+
+      span {
+        display: inline-block !important;
+        color: $heading-secondary-color-2;
+        font-family: "Merriweather",serif;
+        font-size: 2.5rem;
+        font-style: italic;
+        margin: 1rem 0;
+      }
+    }
+
+    &-mentor {
+      h2 {
+
+        span {
+          display: inline-block !important;
+          color: $heading-secondary-color-2;
+          font-family: "Merriweather",serif;
+          font-size: 2.5rem;
+          font-style: italic;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}
+
+.portfolio-item {
+
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 42rem;
+  position: relative;
+
+  @media (min-width: 320px) and (max-width: 991px) {
+    margin-bottom: 5rem !important;
+  }
+
+  &_side {
+    background-color: coral;
+    height: 42rem;
+    width: 100%;
+    transition: all .8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: $border-radius-three;
+    box-shadow: $box-shadow-medium;
+    overflow: hidden;
+
+    &-front {
+      background-color: $color-white;
+    }
+
+    &-back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+      }
+
+      &-2 {
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+      }
+    }
+  }
+
+  &:hover &_side-front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &_side-back {
+    transform: rotateY(0);
+  }
+
+  // FRONT SIDE STYLING
+  &_picture {
+    background-blend-mode: screen;
+    border-top-left-radius: $border-radius-three;
+    border-top-right-radius: $border-radius-three;
+
+    img {
+      max-height: 21rem !important;
+      width: 100% !important;
+    }
+  }
+
+  &_heading {
+    font-size: $default-font-size;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #787878;
+  }
+
+  &_details {
+    padding: 1rem 2rem;
+
+    p {
+      color: $paragraph-text;
+      letter-spacing: 0.3px;
+      font-size: $font-size-medium;
+      font-weight: 300;
+      line-height: 1.6;
+      text-align: justify;
+    }
+  }
+
+  // BACK SIDE STYLING
+  &_cta {
+    width: 90%;
+    @include vh-center;
+
+    a {
+      color: $color-gray-dark;
+    }
+  }
+}
+
+.card-wrapper {
+  margin-top: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+
+.card {
+  background-color: #fafafa;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .24);
+  border-radius: 3px;
+  -ms-flex-preferred-size: 31.55%;
+  flex-basis: 31.55%;
+  margin-bottom: 3rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+  min-height: 45rem;
+  overflow: hidden;
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    min-height: 48rem;
+  }
+}
+
+.card .card-cover {
+  height: 13rem;
+  background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+  background-position: 50%;
+  background-size: cover;
+  position: relative
+}
+
+.card .card-cover:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, .3);
+  display: block;
+  left: 0;
+  top: 0
+}
+
+.card .thumb {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin: -42px auto 12px;
+  overflow: hidden;
+  position: relative
+}
+
+.card .thumb>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+
+.card .thumb:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  //background: linear-gradient(180deg, rgba($color-primary-light, .3), transparent);
+  display: block;
+}
+
+.card>h3 {
+  font-size: 20px;
+  color: #4d4d4d;
+  font-weight: 500;
+  margin-bottom: 3px
+}
+
+.card .amount,
+.card>p {
+  color: #222;
+  font-weight: 300
+}
+
+.card>p {
+  font-size: 18px
+}
+
+.card .amount {
+  font-size: 30px
+}
+
+.card .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e8e8e8;
+  display: block;
+  margin: 17px 0 14px;
+  position: relative
+}
+
+.card .divider:before {
+  width: 45px;
+  height: 4px;
+  content: "";
+  background-color: $color-tertiary-dark;
+  display: block;
+  bottom: 0;
+  position: absolute;
+  left: 44%;
+}
+
+.d-table {
+  padding: 1rem 1.5rem;
+
+  p {
+    color: $paragraph-text;
+    letter-spacing: 0.3px;
+    font-size: $font-size-medium;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}

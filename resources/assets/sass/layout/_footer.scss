@@ -1,0 +1,45 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background:none repeat scroll 0 0 #ebebeb;
+  display:block;
+  min-height:60px;
+  padding:20px 50px;
+}
+
+.footer a {
+  color:#3f3f46;
+  font-size:13px;
+  font-weight:700;
+  padding-right:40px;
+  position:relative;
+  text-decoration:none;
+  text-transform: uppercase
+}
+
+.footer a:after {
+  background: none repeat scroll 0 0 #3f3f46;
+  content: "";
+  height: 10px;
+  margin: -5px 15px 0 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+}
+
+.footer, .footer p {
+  color:#b1b1b1;
+  font-size:12px;
+  font-weight:400;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}

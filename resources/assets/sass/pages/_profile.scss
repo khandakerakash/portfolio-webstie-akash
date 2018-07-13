@@ -1,0 +1,224 @@
+.profile {
+
+  //PROFILE CONTENT PART
+  &-content {
+    &-img {
+      margin-bottom: 1rem;
+
+      img {
+        @include pp-style;
+        height: auto;
+        margin: 15px auto;
+        position: relative;
+        z-index: 2;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        -ms-transition: all .3s;
+        transition: all .3s;
+
+        &:hover {
+          box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+
+    h1 {
+      color: $heading-primary-color;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 0.9em;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align: left;
+      text-transform: uppercase;
+
+      span {
+        display: block;
+      }
+    }
+
+    h2 {
+      color: $heading-secondary-color;
+      display: block;
+      font-family: "Merriweather";
+      font-size: 1.6rem;
+      line-height: 1.8em;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      position: relative;
+      text-align: left;
+
+      &:before {
+        background: none repeat scroll 0 0 $heading-secondary-color;
+        content: "";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 11rem;
+      }
+    }
+
+    &-social {
+
+      a:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+
+      &-btn {
+
+        &:link,
+        &:visited {
+          font-size: 1.6rem;
+          display: inline-block;
+          text-decoration: none;
+          border-bottom: 1px solid $color-primary;
+          padding: 2px 5px;
+          transition: all .2s;
+        }
+
+        &:hover {
+          background-color: $color-primary;
+          color: #fff;
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  //PROFILE BIO PART
+  &-bio {
+    margin-top: 2.2rem;
+
+    &-details {
+
+      P {
+        color: $paragraph-text;
+        letter-spacing: 0.5px;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.6;
+        text-align: justify;
+
+        border-left: 2px solid $border-text-color;
+        padding: 1.25rem;
+      }
+
+      &-link {
+
+        &:link,
+        &:visited {
+          font-size: 1.6rem;
+          background-color: $color-tertiary-light;
+          color: $color-white;
+          display: inline-block;
+          text-decoration: none;
+          text-transform: uppercase;
+          padding: 2px 5px;
+          transition: all .2s;
+        }
+
+        &:hover {
+          background-color: $color-primary;
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+          transform: translateY(0);
+        }
+      }
+
+      &-info {
+
+        a:not(:first-child) {
+          margin-left: 2rem;
+        }
+
+        &-btn {
+
+          &:link,
+          &:visited {
+            //font-size: 1.6rem;
+            //color: $color-primary;
+
+            color: $paragraph-text;
+            letter-spacing: 0.5px;
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 1.6;
+            text-align: justify;
+
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid $color-primary;
+            padding: 2px 5px;
+            transition: all .2s;
+          }
+
+          &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+          }
+
+          &:active {
+            box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+            transform: translateY(0);
+          }
+        }
+
+        .fa {
+          margin-left: 0.5rem !important;
+        }
+      }
+    }
+  }
+
+  //PROFILE OFFER PART
+
+  &-offer-headings {
+
+    h2 {
+      color: $heading-secondary-color-2;
+      font-family: "Merriweather",serif;
+      font-size: 2.5rem;
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-offer-details {
+
+    margin-bottom: 10rem !important;
+
+    h3 {
+      color: $heading-secondary-color-2;
+      font-family: "Merriweather",serif;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    p {
+      color: $paragraph-text;
+      letter-spacing: 0.3px;
+      font-size: 1.8rem;
+      font-weight: 300;
+      line-height: 1.6;
+      text-align: justify;
+    }
+  }
+}
+
