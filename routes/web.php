@@ -27,3 +27,7 @@ Route::get('/portfolio', function () {
 Route::get('/resume', function () {
     return View::make('front_end/resume');
 });
+
+Route::get('/contact', function () {
+    return View::make('front_end/contact');
+});

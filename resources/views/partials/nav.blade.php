@@ -11,7 +11,7 @@
             <li class="lavigation__item"><a href="{{ URL::to('profile') }}" class="navigation__link"><span><i class="fa fa-user" aria-hidden="true"></i></span> Profile</a></li>
             <li class="lavigation__item"><a href="{{ URL::to('portfolio') }}" class="navigation__link"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span> Portfolio</a></li>
             <li class="lavigation__item"><a href="{{ URL::to('resume') }}" class="navigation__link"><span><i class="fa fa-file-text-o" aria-hidden="true"></i></span> Resume</a></li>
-            <li class="lavigation__item"><a href="#" class="navigation__link"><span><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span> Contact</a></li>
+            <li class="lavigation__item"><a href="{{ URL::to('contact') }}" class="navigation__link"><span><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span> Contact</a></li>
         </ul>
     </nav>
 </div><!-- /.navigation -->

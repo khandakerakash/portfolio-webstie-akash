@@ -52,7 +52,7 @@
   display: table;
   table-layout: fixed;
 
-  @media (min-width: 320px) and (max-width: 991px) {
+  @media (min-width: 300px) and (max-width: 991px) {
     width: 100%;
     height: 100%;
   }
@@ -74,7 +74,7 @@
   word-break: keep-all;
   word-wrap: normal;
 
-  @media (min-width: 320px) and (max-width: 991px) {
+  @media (min-width: 300px) and (max-width: 991px) {
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
     text-align: center;
@@ -90,7 +90,7 @@ ul.experience {
   position: relative;
   margin-left: -75px;
 
-  @media (min-width: 320px) and (max-width: 991px) {
+  @media (min-width: 300px) and (max-width: 991px) {
     width: 100% !important;
     margin-left: 2rem !important;
   }
@@ -105,6 +105,10 @@ ul.experience {
   width: 15rem;
   position: absolute;
   left: 0;
+
+  @media (min-width: 300px) and (max-width: 575px) {
+    width: 10rem;
+  }
 }
 
 .experience::after {
@@ -136,9 +140,13 @@ ul.experience {
   -o-transition: margin .5s cubic-bezier(.23,1,.32,1);
   transition: margin .5s cubic-bezier(.23,1,.32,1);
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 520px) and (max-width: 767px) {
     padding: .85em .5em .85em 110px;
     margin-left: 0;
+  }
+
+  @media (min-width: 300px) and (max-width: 575px) {
+    padding: .85em .5em .85em 80px;
   }
 }
 
@@ -149,6 +157,10 @@ ul.experience {
   left: 0;
   position: absolute;
   top: 3.8rem;
+
+  @media (min-width: 300px) and (max-width: 575px) {
+    width: 8rem;
+  }
 }
 
 
@@ -161,6 +173,10 @@ ul.experience {
   top: 1rem;
   color: $resume-job-time;
   width: 11.5rem;
+
+  @media (min-width: 300px) and (max-width: 575px) {
+    width: 7.5rem;
+  }
 }
 
 .employment-time.job-current {
@@ -178,6 +194,16 @@ ul.experience {
   text-transform: uppercase;
   display: block;
   letter-spacing: 1px;
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    letter-spacing: 0 !important;
+  }
+
+  @media (min-width: 300px) and (max-width: 575px) {
+    letter-spacing: 0 !important;
+    font-size: $font-size-small;
+  }
+
 }
 
 .experience-heading .position {
@@ -185,6 +211,10 @@ ul.experience {
   display: block;
   font-family: 'Lora', serif;
   font-style: italic;
+
+  @media (min-width: 300px) and (max-width: 767px) {
+    font-size: 1.4rem;
+  }
 }
 
 
@@ -195,6 +225,8 @@ ul.experience {
   left: 0;
   position: absolute;
   top: 6.5rem;
+
+  transition: all .2s;
 }
 
 .experience-details {
@@ -204,14 +236,10 @@ ul.experience {
   line-height: 1.5;
   position: relative;
 
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
+  -webkit-animation: moveInLeft 1s ease-out;
+  animation: moveInLeft 1s ease-out;
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 300px) and (max-width: 767px) {
     padding-left: 2rem !important;
     padding-right: 3rem !important;
   }
@@ -238,6 +266,18 @@ ul.experience {
     &:active {
       box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
       transform: translateY(0);
+    }
+  }
+
+  .progress {
+    height: 1.5rem !important;
+
+    .progress-bar {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
     }
   }
 }
@@ -270,10 +310,14 @@ ul.experience {
   margin-right: 1rem;
 }
 
+.experience-heading:hover .position::before {
+  border-bottom: 1px solid $still-job;
+}
+
 .edu-height {
   height: 1.5rem;
 
-  @media (min-width: 320px) and (max-width: 991px) {
+  @media (min-width: 300px) and (max-width: 991px) {
     width: 100% !important;
     height: 100% !important;
   }
@@ -282,7 +326,7 @@ ul.experience {
 .skills-height {
   height: 68rem;
 
-  @media (min-width: 320px) and (max-width: 991px) {
+  @media (min-width: 300px) and (max-width: 991px) {
     width: 100% !important;
     height: 100% !important;
   }

@@ -35,6 +35,7 @@ Vue.component('home', require('./components/Home.vue'));
 Vue.component('profile', require('./components/Profile.vue'));
 Vue.component('portfolio', require('./components/Portfolio.vue'));
 Vue.component('resume', require('./components/Resume'));
+Vue.component('contact', require('./components/Contact'));
 
 const app = new Vue({
     el: '#app',
