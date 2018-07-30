@@ -11966,6 +11966,12 @@ ul.experience {
   margin: 0 auto;
 }
 
+@media (min-width: 300px) and (max-width: 460px) {
+  .contact_form-wrapper {
+    padding: 1rem 2rem 3rem 2rem;
+  }
+}
+
 .contact_form-wrapper .form__group:not(:last-child) {
   margin-bottom: 2rem;
 }
