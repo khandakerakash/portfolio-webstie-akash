@@ -69524,6 +69524,7 @@ var render = function() {
                         click: function($event) {
                           $event.preventDefault()
                           _vm.showActive(14)
+                          _vm.calculateSkills(7)
                         }
                       }
                     },
@@ -70096,7 +70097,7 @@ var staticRenderFns = [
                   _c("div", { staticClass: "col-12" }, [
                     _c("div", { staticClass: "form__group form-group" }, [
                       _c("textarea", {
-                        staticClass: "form__input form-control",
+                        staticClass: "form__input-textarea form-control",
                         attrs: {
                           name: "contactMessage",
                           id: "contactMessage",

@@ -10590,7 +10590,7 @@ body {
           animation-timing-function: ease-out;
 }
 
-@media (min-width: 320px) and (max-width: 420px) {
+@media (min-width: 300px) and (max-width: 420px) {
   .heading-primary--main {
     font-size: 3rem;
     letter-spacing: 0.5rem;
@@ -10631,7 +10631,7 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 420px) {
+@media (min-width: 300px) and (max-width: 420px) {
   .heading-primary--sub {
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
@@ -10669,7 +10669,7 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   .back-to-home-icon {
     top: 1.5rem;
     left: 2.5rem;
@@ -10926,7 +10926,7 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   .navigation__button {
     top: 0.5rem;
     right: 2.5rem;
@@ -11130,7 +11130,7 @@ body {
   position: relative;
 }
 
-@media (min-width: 320px) and (max-width: 991px) {
+@media (min-width: 300px) and (max-width: 991px) {
   .portfolio-item {
     margin-bottom: 5rem !important;
   }
@@ -11795,7 +11795,7 @@ ul.experience {
 
 @media (min-width: 300px) and (max-width: 767px) {
   .experience-heading .position {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -11988,10 +11988,24 @@ ul.experience {
 }
 
 .contact_form-wrapper .form__input:focus {
-  overflow: hidden;
-  outline: none !important;
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0) !important;
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0) !important;
+  overflow: hidden !important;
+  outline: 0 !important;
+}
+
+.contact_form-wrapper .form__input-textarea {
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  color: #3f3f46;
+  float: left;
+  font-size: 1.4rem;
+  margin: 1.5rem auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+.contact_form-wrapper .form__input-textarea:focus {
+  overflow: hidden !important;
+  outline: 0 !important;
 }
 
 .contact_form-wrapper .form .btn-submit {
@@ -12012,5 +12026,11 @@ ul.experience {
 .contact_form-wrapper .form .btn-submit:hover {
   color: #fff;
   background-color: #65C3AD;
+}
+
+.contact .form-control:focus {
+  webkit-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 

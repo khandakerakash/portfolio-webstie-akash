@@ -22,7 +22,7 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
 
-    @media (min-width: 320px) and (max-width: 420px) {
+    @media (min-width: 300px) and (max-width: 420px) {
       font-size: 3rem;
       letter-spacing: 0.5rem;
       color: #3D555F !important;
@@ -52,7 +52,7 @@ body {
       letter-spacing: 0.2rem;
     }
 
-    @media (min-width: 320px) and (max-width: 420px) {
+    @media (min-width: 300px) and (max-width: 420px) {
       font-size: 1.5rem;
       letter-spacing: 0.1rem;
       color: #000 !important;

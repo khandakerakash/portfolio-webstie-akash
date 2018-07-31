@@ -168,7 +168,7 @@
                                 </li>
 
                                 <li class="experience-list-item">
-                                    <div class="experience-heading" @click.prevent="showActive(14)">
+                                    <div class="experience-heading" @click.prevent="showActive(14); calculateSkills(7);">
                                         <h3><span class="experience-heading-icon">↘</span><span class="employer">Markup &amp; Styling Tools</span><span class="position">HTML5, CSS, SASS</span></h3>
                                     </div>
                                     <div class="experience-details" v-if="activeTab === 14">

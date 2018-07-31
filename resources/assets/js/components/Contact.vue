@@ -36,7 +36,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form__group form-group">
-                                        <textarea class="form__input form-control" name="contactMessage" id="contactMessage" cols="30" rows="4" required></textarea>
+                                        <textarea class="form__input-textarea form-control" name="contactMessage" id="contactMessage" cols="30" rows="4" required></textarea>
                                     </div>
                                 </div>
                             </div>
